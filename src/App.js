@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Card from "./components/Card";
+import UploadForm from "./components/UploadFrom";
 
 const photos = [
   'https://picsum.photos/id/1001/200/200',
@@ -23,8 +24,9 @@ function App() {
     <Navbar />
   
       <div class="container text-center mt-5">
-        <button className="btn btn-warning mx-2" onClick={() =>setImages(['https://picsum.photos/id/1009/200/200', ...images])}>+Add</button>
-        <button className="btn btn-success" onClick={toggle}>Collapse</button>
+      
+        <button className="btn btn-success float-end" onClick={toggle}>+Add</button>
+        <UploadForm />
         <h1>Gallery</h1>
 
         <div className="row">
