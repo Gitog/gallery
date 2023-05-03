@@ -26,7 +26,8 @@ function App() {
       <div class="container text-center mt-5">
       
         <button className="btn btn-success float-end" onClick={toggle}>+Add</button>
-        <UploadForm />
+        <div className="clearfix mb-4"></div>
+        <UploadForm isVisible={isCollapsed}/>
         <h1>Gallery</h1>
 
         <div className="row">
