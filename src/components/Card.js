@@ -1,13 +1,9 @@
-function Card() {
-  return(
+function Card(props) {
+  return (
     <div className="col mb-5">
-    <div className="Card" style={{ width: "18rem" }}>
-      <img
-        src="https://via.placeholder.com/200"
-        className="card-img-top"
-        alt="image"
-      />
-    </div>
+      <div className="Card" style={{ width: "18rem" }}>
+        <img src={props.src} className="card-img-top" alt={props.src} />
+      </div>
     </div>
   );
 }
